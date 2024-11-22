@@ -38,20 +38,13 @@ output "my_property" {
     value = data.akamai_property.my_prop
 }
 
-/* output "my_group_id" {
+output "my_group_id" {
     value = data.akamai_group.my_group_id
-} */
-
-/*data "akamai_groups" "my_groups" {
 }
 
-output "my_groups" {
-  value = data.akamai_groups.my_groups
-} */
-
-/* resource "akamai_property" "my_property" {
+resource "akamai_property" "my_property" {
     name    	= "ralvarez_tf"
     product_id  = "Fresca"
     contract_id = data.akamai_group.my_group_id.contract_id
     group_id    = data.akamai_group.my_group_id.id
-} */
+}
